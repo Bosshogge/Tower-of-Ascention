@@ -1,0 +1,32 @@
+2026-05-27 00:35:30.817 +00:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2026-05-27 00:35:31.914 +00:00 [INF] Creating game context using SQLite...
+2026-05-27 00:35:34.417 +00:00 [INF] Creating player context using SQLite...
+2026-05-27 00:35:35.108 +00:00 [INF] Creating logging context using SQLite...
+2026-05-27 00:35:37.377 +00:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2026-05-27 00:35:38.480 +00:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2026-05-27 00:35:38.485 +00:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2026-05-27 00:35:38.488 +00:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2026-05-27 00:35:38.579 +00:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2026-05-27 00:35:38.654 +00:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2026-05-27 00:35:38.659 +00:00 [INF] Discovered 0 plugins:
+
+2026-05-27 00:35:40.252 +00:00 [INF] InvalidPortCheckerResponse
+2026-05-27 00:35:40.268 +00:00 [INF] Port 5400 is not open, trying UPnP...
+2026-05-27 00:35:45.325 +00:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2026-05-27 00:35:45.342 +00:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2026-05-27 00:35:45.467 +00:00 [INF] Unpacking appsettings...
+2026-05-27 00:35:45.877 +00:00 [INF] Launching Intersect REST API in 'Production' mode...
+2026-05-27 00:38:57.405 +00:00 [INF] Connection approved [95264415-3913-470c-aab5-ba997b0cbd97].
+2026-05-27 00:38:57.409 +00:00 [INF] Connected [95264415-3913-470c-aab5-ba997b0cbd97].
+2026-05-27 00:39:02.108 +00:00 [INF] Disconnected [95264415-3913-470c-aab5-ba997b0cbd97].
+2026-05-27 00:39:12.074 +00:00 [INF] Connection approved [dabee65c-73bb-4288-90bd-279b3f03a91d].
+2026-05-27 00:39:12.075 +00:00 [INF] Connected [dabee65c-73bb-4288-90bd-279b3f03a91d].
+2026-05-27 00:39:24.791 +00:00 [INF] Connection approved [682273dd-2764-430a-acf6-cf104a6deeee].
+2026-05-27 00:39:24.791 +00:00 [INF] Connected [682273dd-2764-430a-acf6-cf104a6deeee].
+2026-05-27 01:07:56.609 +00:00 [INF] Disconnected [682273dd-2764-430a-acf6-cf104a6deeee].
+2026-05-27 01:07:56.671 +00:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 8f7de2a5-593b-4acf-afc7-2ec309420f6b)
+2026-05-27 01:15:45.401 +00:00 [INF] Disconnected [dabee65c-73bb-4288-90bd-279b3f03a91d].
+2026-05-27 01:15:45.408 +00:00 [INF] [Player.CompleteLogout] Done saving Clair (hard logout, 11196ac1-21dd-4e00-93a9-87176cfc41dc)

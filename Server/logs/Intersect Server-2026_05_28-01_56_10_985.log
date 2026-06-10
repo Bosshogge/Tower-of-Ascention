@@ -1,0 +1,65 @@
+2026-05-28 01:56:21.023 +00:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2026-05-28 01:56:22.524 +00:00 [INF] Creating game context using SQLite...
+2026-05-28 01:56:24.855 +00:00 [INF] Creating player context using SQLite...
+2026-05-28 01:56:25.513 +00:00 [INF] Creating logging context using SQLite...
+2026-05-28 01:56:27.683 +00:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2026-05-28 01:56:28.669 +00:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2026-05-28 01:56:28.690 +00:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2026-05-28 01:56:28.747 +00:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2026-05-28 01:56:28.863 +00:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2026-05-28 01:56:28.936 +00:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2026-05-28 01:56:28.940 +00:00 [INF] Discovered 0 plugins:
+
+2026-05-28 01:56:30.654 +00:00 [INF] InvalidPortCheckerResponse
+2026-05-28 01:56:30.671 +00:00 [INF] Port 5400 is not open, trying UPnP...
+2026-05-28 01:56:35.730 +00:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2026-05-28 01:56:35.751 +00:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2026-05-28 01:56:35.913 +00:00 [INF] Unpacking appsettings...
+2026-05-28 01:56:36.433 +00:00 [INF] Launching Intersect REST API in 'Production' mode...
+2026-05-28 01:56:58.318 +00:00 [INF] Connection approved [9c9a02b8-6dd5-4b7a-af7a-826f67191893].
+2026-05-28 01:56:58.329 +00:00 [INF] Connected [9c9a02b8-6dd5-4b7a-af7a-826f67191893].
+2026-05-28 01:57:14.754 +00:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 8f7de2a5-593b-4acf-afc7-2ec309420f6b)
+2026-05-28 01:57:14.860 +00:00 [INF] Disconnected [9c9a02b8-6dd5-4b7a-af7a-826f67191893].
+2026-05-28 02:03:56.981 +00:00 [INF] Connection approved [469a937a-e7dc-4fda-9b8b-b78b1e2a8a3d].
+2026-05-28 02:03:56.983 +00:00 [INF] Connected [469a937a-e7dc-4fda-9b8b-b78b1e2a8a3d].
+2026-05-28 02:04:00.345 +00:00 [INF] Disconnected [469a937a-e7dc-4fda-9b8b-b78b1e2a8a3d].
+2026-05-28 02:04:57.094 +00:00 [INF] Connection approved [daf9d9c7-e62f-449a-8118-514293114e28].
+2026-05-28 02:04:57.097 +00:00 [INF] Connected [daf9d9c7-e62f-449a-8118-514293114e28].
+2026-05-28 02:05:23.094 +00:00 [INF] Disconnected [daf9d9c7-e62f-449a-8118-514293114e28].
+2026-05-28 02:05:23.119 +00:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 8f7de2a5-593b-4acf-afc7-2ec309420f6b)
+2026-05-28 10:45:32.518 +00:00 [INF] Connection approved [6c90af02-8062-41bf-8e7a-d900bf39a594].
+2026-05-28 10:45:32.525 +00:00 [INF] Connected [6c90af02-8062-41bf-8e7a-d900bf39a594].
+2026-05-28 10:49:33.464 +00:00 [INF] [Player.CompleteLogout] Done saving AL (hard logout, bd7e18e2-7691-4e11-bb21-41128df86871)
+2026-05-28 10:49:33.496 +00:00 [INF] Disconnected [6c90af02-8062-41bf-8e7a-d900bf39a594].
+2026-05-28 10:49:38.288 +00:00 [INF] Connection approved [d7ecdc85-9fe6-4026-a07b-82e7c34e5882].
+2026-05-28 10:49:38.291 +00:00 [INF] Connected [d7ecdc85-9fe6-4026-a07b-82e7c34e5882].
+2026-05-28 11:00:32.730 +00:00 [INF] Disconnected [d7ecdc85-9fe6-4026-a07b-82e7c34e5882].
+2026-05-28 11:00:32.741 +00:00 [INF] [Player.CompleteLogout] Done saving Cakge (hard logout, 848c27be-e117-4337-bf7d-367f5a22a4f8)
+2026-05-28 11:33:35.028 +00:00 [INF] Connection approved [e12b42c2-118d-45dd-856b-89c27e317f5a].
+2026-05-28 11:33:35.032 +00:00 [INF] Connected [e12b42c2-118d-45dd-856b-89c27e317f5a].
+2026-05-28 12:06:08.949 +00:00 [INF] [Player.CompleteLogout] Done saving Cakge (hard logout, 848c27be-e117-4337-bf7d-367f5a22a4f8)
+2026-05-28 12:06:08.963 +00:00 [INF] Disconnected [e12b42c2-118d-45dd-856b-89c27e317f5a].
+2026-05-28 12:06:08.977 +00:00 [WRN] RNIP: 101.182.56.187:63449 (0, ReliableOrdered)
+2026-05-28 12:06:08.978 +00:00 [WRN] RNIP: 101.182.56.187:63449 (0, ReliableOrdered)
+2026-05-28 12:06:08.979 +00:00 [WRN] RNIP: 101.182.56.187:63449 (0, ReliableOrdered)
+2026-05-28 12:06:08.980 +00:00 [WRN] RNIP: 101.182.56.187:63449 (0, ReliableOrdered)
+2026-05-28 12:06:08.980 +00:00 [WRN] RNIP: 101.182.56.187:63449 (0, ReliableOrdered)
+2026-05-28 12:07:28.953 +00:00 [INF] Connection approved [ae602e95-b0a7-4a93-871a-3c6815233559].
+2026-05-28 12:07:28.956 +00:00 [INF] Connected [ae602e95-b0a7-4a93-871a-3c6815233559].
+2026-05-28 12:07:53.812 +00:00 [INF] Disconnected [ae602e95-b0a7-4a93-871a-3c6815233559].
+2026-05-28 12:07:53.821 +00:00 [INF] [Player.CompleteLogout] Done saving Cakge (hard logout, 848c27be-e117-4337-bf7d-367f5a22a4f8)
+2026-05-31 11:21:04.696 +00:00 [INF] Connection approved [1b10949e-fe13-4a63-83b6-f9d7ba94b63e].
+2026-05-31 11:21:04.899 +00:00 [INF] Connected [1b10949e-fe13-4a63-83b6-f9d7ba94b63e].
+2026-05-31 11:22:27.007 +00:00 [INF] Disconnected [1b10949e-fe13-4a63-83b6-f9d7ba94b63e].
+2026-05-31 11:22:27.031 +00:00 [INF] [Player.CompleteLogout] Done saving BrowArrow (hard logout, 248d1479-3627-4618-be36-f87b37b2d98d)
+2026-06-02 22:42:09.406 +00:00 [INF] Connection approved [a6b5c986-047e-42f8-a86a-341f3e882ee5].
+2026-06-02 22:42:09.534 +00:00 [INF] Connected [a6b5c986-047e-42f8-a86a-341f3e882ee5].
+2026-06-02 22:42:47.240 +00:00 [INF] Connection approved [d71273b4-65b5-4d3e-adb1-34217d6d6f3f].
+2026-06-02 22:42:47.244 +00:00 [INF] Connected [d71273b4-65b5-4d3e-adb1-34217d6d6f3f].
+2026-06-02 22:46:34.852 +00:00 [INF] Disconnected [a6b5c986-047e-42f8-a86a-341f3e882ee5].
+2026-06-02 22:46:34.911 +00:00 [INF] [Player.CompleteLogout] Done saving JSIS (hard logout, f01f1aa5-d65c-465e-83be-12c5ed1785ba)
+2026-06-02 22:46:36.614 +00:00 [INF] Disconnected [d71273b4-65b5-4d3e-adb1-34217d6d6f3f].
+2026-06-02 22:46:36.624 +00:00 [INF] [Player.CompleteLogout] Done saving WhiteMousse (hard logout, bdb7f5a8-2d6f-4f65-b012-596fa45e5a99)

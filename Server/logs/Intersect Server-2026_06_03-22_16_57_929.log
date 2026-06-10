@@ -1,0 +1,25 @@
+2026-06-03 22:17:03.189 +00:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2026-06-03 22:17:04.286 +00:00 [INF] Creating game context using SQLite...
+2026-06-03 22:17:06.879 +00:00 [INF] Creating player context using SQLite...
+2026-06-03 22:17:07.532 +00:00 [INF] Creating logging context using SQLite...
+2026-06-03 22:17:09.785 +00:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2026-06-03 22:17:10.885 +00:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2026-06-03 22:17:10.889 +00:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2026-06-03 22:17:10.891 +00:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2026-06-03 22:17:11.016 +00:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2026-06-03 22:17:11.073 +00:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2026-06-03 22:17:11.076 +00:00 [INF] Discovered 0 plugins:
+
+2026-06-03 22:17:12.751 +00:00 [INF] InvalidPortCheckerResponse
+2026-06-03 22:17:12.768 +00:00 [INF] Port 5400 is not open, trying UPnP...
+2026-06-03 22:17:17.853 +00:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2026-06-03 22:17:17.878 +00:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2026-06-03 22:17:18.066 +00:00 [INF] Unpacking appsettings...
+2026-06-03 22:17:18.542 +00:00 [INF] Launching Intersect REST API in 'Production' mode...
+2026-06-10 16:27:01.939 +00:00 [INF] Connection approved [2ff0b2c3-083f-4401-97ea-9dd1f9d481bf].
+2026-06-10 16:27:02.047 +00:00 [INF] Connected [2ff0b2c3-083f-4401-97ea-9dd1f9d481bf].
+2026-06-10 16:28:35.737 +00:00 [INF] Disconnected [2ff0b2c3-083f-4401-97ea-9dd1f9d481bf].
+2026-06-10 16:28:35.768 +00:00 [INF] [Player.CompleteLogout] Done saving Infinitum (hard logout, 61071f68-7354-4330-9d61-8404d8b1517b)
