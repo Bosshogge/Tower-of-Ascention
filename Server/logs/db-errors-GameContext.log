@@ -1,0 +1,175 @@
+2025-05-18 00:22:46.509 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Intersect.Server.Database.GameData.SqliteGameContext'.
+Newtonsoft.Json.JsonSerializationException: Error converting value "[100, 150, 225, 338, 507, 761, 1141, 1711, 2566, 3849, 5774, 8661, 12991, 19500, 29250, 43875, 65813, 98720, 148080, 222120, 333180, 499770, 749655, 1124482, 1686723, 2530085, 3795128, 5692692, 8539038, 12808557, 19212836, 28819254, 43228881, 64843322, 97264983, 145897474, 218846211, 328269317, 492403976, 738605964, 1107908946, 1661863419, 2492795129, 3739192693, 5608789039, 8413183558, 12619775337, 18929663006, 28394494509, 42591741763, 63887612645, 95831418968, 143747128452, 215620692678, 323431039017, 485146558525, 727719837787, 1091579756680, 1637369635020, 2456054452530, 3684081678795, 5526122518192, 8289183777288, 12433775665932, 18650663498898, 27975995248347, 41963992872520, 62945989308780, 94418983963170, 141628475944755, 212442713917132, 318664070875698, 477996106313547, 716994159470320, 1075491239205480, 1613236858808220, 2419855288212330, 3629782932318490, 5444674398477735, 8167011597716603, 12250517396574904, 18375776094862360, 27563664142293540, 41345496213440310, 62018244320160470, 93027366480240710, 139541049720361080, 209311574580541600, 313967361870812400, 470951042806218600, 706426564209327800, 1059642846313991700, 1589464269470987500, 2384196404206481200, 3576294606309722000, 5364441909464582000, 8046662864196874000, 12069994296295311000, 18104991444442965000, 27157487166664447000, 40736230749996670000, 61104346124995010000, 91656519187492510000, 137484778781238780000]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 1413.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Newtonsoft.Json.JsonSerializationException: Error converting value "[100, 150, 225, 338, 507, 761, 1141, 1711, 2566, 3849, 5774, 8661, 12991, 19500, 29250, 43875, 65813, 98720, 148080, 222120, 333180, 499770, 749655, 1124482, 1686723, 2530085, 3795128, 5692692, 8539038, 12808557, 19212836, 28819254, 43228881, 64843322, 97264983, 145897474, 218846211, 328269317, 492403976, 738605964, 1107908946, 1661863419, 2492795129, 3739192693, 5608789039, 8413183558, 12619775337, 18929663006, 28394494509, 42591741763, 63887612645, 95831418968, 143747128452, 215620692678, 323431039017, 485146558525, 727719837787, 1091579756680, 1637369635020, 2456054452530, 3684081678795, 5526122518192, 8289183777288, 12433775665932, 18650663498898, 27975995248347, 41963992872520, 62945989308780, 94418983963170, 141628475944755, 212442713917132, 318664070875698, 477996106313547, 716994159470320, 1075491239205480, 1613236858808220, 2419855288212330, 3629782932318490, 5444674398477735, 8167011597716603, 12250517396574904, 18375776094862360, 27563664142293540, 41345496213440310, 62018244320160470, 93027366480240710, 139541049720361080, 209311574580541600, 313967361870812400, 470951042806218600, 706426564209327800, 1059642846313991700, 1589464269470987500, 2384196404206481200, 3576294606309722000, 5364441909464582000, 8046662864196874000, 12069994296295311000, 18104991444442965000, 27157487166664447000, 40736230749996670000, 61104346124995010000, 91656519187492510000, 137484778781238780000]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 1413.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-05-18 00:23:33.550 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Intersect.Server.Database.GameData.SqliteGameContext'.
+Newtonsoft.Json.JsonSerializationException: Error converting value "[100, 150, 225, 338, 507, 761, 1141, 1711, 2566, 3849, 5774, 8661, 12991, 19500, 29250, 43875, 65813, 98720, 148080, 222120, 333180, 499770, 749655, 1124482, 1686723, 2530085, 3795128, 5692692, 8539038, 12808557, 19212836, 28819254, 43228881, 64843322, 97264983, 145897474, 218846211, 328269317, 492403976, 738605964, 1107908946, 1661863419, 2492795129, 3739192693, 5608789039, 8413183558, 12619775337, 18929663006, 28394494509, 42591741763, 63887612645, 95831418968, 143747128452, 215620692678, 323431039017, 485146558525, 727719837787, 1091579756680, 1637369635020, 2456054452530, 3684081678795, 5526122518192, 8289183777288, 12433775665932, 18650663498898, 27975995248347, 41963992872520, 62945989308780, 94418983963170, 141628475944755, 212442713917132, 318664070875698, 477996106313547, 716994159470320, 1075491239205480, 1613236858808220, 2419855288212330, 3629782932318490, 5444674398477735, 8167011597716603, 12250517396574904, 18375776094862360, 27563664142293540, 41345496213440310, 62018244320160470, 93027366480240710, 139541049720361080, 209311574580541600, 313967361870812400, 470951042806218600, 706426564209327800, 1059642846313991700, 1589464269470987500, 2384196404206481200, 3576294606309722000, 5364441909464582000, 8046662864196874000, 12069994296295311000, 18104991444442965000, 27157487166664447000, 40736230749996670000, 61104346124995010000, 91656519187492510000, 137484778781238780000]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 1413.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Newtonsoft.Json.JsonSerializationException: Error converting value "[100, 150, 225, 338, 507, 761, 1141, 1711, 2566, 3849, 5774, 8661, 12991, 19500, 29250, 43875, 65813, 98720, 148080, 222120, 333180, 499770, 749655, 1124482, 1686723, 2530085, 3795128, 5692692, 8539038, 12808557, 19212836, 28819254, 43228881, 64843322, 97264983, 145897474, 218846211, 328269317, 492403976, 738605964, 1107908946, 1661863419, 2492795129, 3739192693, 5608789039, 8413183558, 12619775337, 18929663006, 28394494509, 42591741763, 63887612645, 95831418968, 143747128452, 215620692678, 323431039017, 485146558525, 727719837787, 1091579756680, 1637369635020, 2456054452530, 3684081678795, 5526122518192, 8289183777288, 12433775665932, 18650663498898, 27975995248347, 41963992872520, 62945989308780, 94418983963170, 141628475944755, 212442713917132, 318664070875698, 477996106313547, 716994159470320, 1075491239205480, 1613236858808220, 2419855288212330, 3629782932318490, 5444674398477735, 8167011597716603, 12250517396574904, 18375776094862360, 27563664142293540, 41345496213440310, 62018244320160470, 93027366480240710, 139541049720361080, 209311574580541600, 313967361870812400, 470951042806218600, 706426564209327800, 1059642846313991700, 1589464269470987500, 2384196404206481200, 3576294606309722000, 5364441909464582000, 8046662864196874000, 12069994296295311000, 18104991444442965000, 27157487166664447000, 40736230749996670000, 61104346124995010000, 91656519187492510000, 137484778781238780000]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 1413.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-05-18 00:27:30.623 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Intersect.Server.Database.GameData.SqliteGameContext'.
+Newtonsoft.Json.JsonSerializationException: Error converting value "[0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,7944614,8771558,9684577,10692629,11805606,13034431,14391160,15889109,17542976,19368992,21385073,23611006,26068632]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 700.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Newtonsoft.Json.JsonSerializationException: Error converting value "[0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,7944614,8771558,9684577,10692629,11805606,13034431,14391160,15889109,17542976,19368992,21385073,23611006,26068632]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 700.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-05-18 00:32:30.935 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Intersect.Server.Database.GameData.SqliteGameContext'.
+Newtonsoft.Json.JsonSerializationException: Error converting value "[0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,7944614,8771558,9684577,10692629,11805606,13034431,14391160,15889109,17542976,19368992,21385073,23611006,26068632]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 700.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Newtonsoft.Json.JsonSerializationException: Error converting value "[0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,7944614,8771558,9684577,10692629,11805606,13034431,14391160,15889109,17542976,19368992,21385073,23611006,26068632]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 700.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-05-18 00:33:12.730 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Intersect.Server.Database.GameData.SqliteGameContext'.
+Newtonsoft.Json.JsonSerializationException: Error converting value "[0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,7944614,8771558,9684577,10692629,11805606,13034431,14391160,15889109,17542976,19368992,21385073,23611006,26068632]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 700.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Newtonsoft.Json.JsonSerializationException: Error converting value "[0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,7944614,8771558,9684577,10692629,11805606,13034431,14391160,15889109,17542976,19368992,21385073,23611006,26068632]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 700.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()

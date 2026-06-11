@@ -1,0 +1,25 @@
+2026-05-28 18:49:00.820 -04:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2026-05-28 18:49:01.358 -04:00 [INF] Creating game context using SQLite...
+2026-05-28 18:49:02.847 -04:00 [INF] Creating player context using SQLite...
+2026-05-28 18:49:03.367 -04:00 [INF] Creating logging context using SQLite...
+2026-05-28 18:49:05.042 -04:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2026-05-28 18:49:05.728 -04:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2026-05-28 18:49:05.733 -04:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2026-05-28 18:49:05.735 -04:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2026-05-28 18:49:05.779 -04:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2026-05-28 18:49:05.816 -04:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2026-05-28 18:49:05.818 -04:00 [INF] Discovered 0 plugins:
+
+2026-05-28 18:49:07.385 -04:00 [INF] InvalidPortCheckerResponse
+2026-05-28 18:49:07.402 -04:00 [INF] Port 5400 is not open, trying UPnP...
+2026-05-28 18:49:12.415 -04:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2026-05-28 18:49:12.426 -04:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2026-05-28 18:49:12.487 -04:00 [INF] Unpacking appsettings...
+2026-05-28 18:49:12.623 -04:00 [INF] Launching Intersect REST API in 'Production' mode...
+2026-05-28 18:49:15.775 -04:00 [INF] Connection approved [500e654b-ece7-41fe-bc74-0166ae1ba5b4].
+2026-05-28 18:49:15.779 -04:00 [INF] Connected [500e654b-ece7-41fe-bc74-0166ae1ba5b4].
+2026-05-28 18:50:30.261 -04:00 [INF] Connection approved [7996c0f8-0521-4c36-8c15-24117f196e6d].
+2026-05-28 18:50:30.266 -04:00 [INF] Connected [7996c0f8-0521-4c36-8c15-24117f196e6d].

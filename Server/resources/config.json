@@ -204,8 +204,8 @@
       "DestroyOrphanedLayers": false
     },
     "MapHeight": 26,
-    "MapItemHeight": 0,
-    "MapItemWidth": 0,
+    "MapItemHeight": 32,
+    "MapItemWidth": 32,
     "MapWidth": 32,
     "TileHeight": 32,
     "TileWidth": 32,

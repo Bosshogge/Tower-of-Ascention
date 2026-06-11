@@ -1,0 +1,23 @@
+2025-05-18 00:33:07.611 -05:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2025-05-18 00:33:07.936 -05:00 [INF] Creating game context using SQLite...
+2025-05-18 00:33:10.381 -05:00 [INF] Creating player context using SQLite...
+2025-05-18 00:33:11.223 -05:00 [INF] Creating logging context using SQLite...
+2025-05-18 00:33:12.748 -05:00 [ERR] Error while loading game objects of type "Class"
+Newtonsoft.Json.JsonSerializationException: Error converting value "[0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,7944614,8771558,9684577,10692629,11805606,13034431,14391160,15889109,17542976,19368992,21385073,23611006,26068632]" to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int64]'. Path '', line 1, position 700.
+ ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.Dictionary`2[System.Int32,System.Int64].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Intersect.Framework.Core.GameObjects.PlayerClass.ClassDescriptor.set_ExpOverridesJson(String value) in D:\a\Intersect-Engine\Intersect-Engine\Framework\Intersect.Framework.Core\GameObjects\PlayerClass\ClassDescriptor.cs:line 315
+   at lambda_method1425(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at Intersect.Server.Database.DbInterface.LoadGameObjects(GameObjectType gameObjectType) in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server.Core\Database\DbInterface.cs:line 807

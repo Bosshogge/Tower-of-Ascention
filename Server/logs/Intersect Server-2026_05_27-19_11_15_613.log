@@ -1,0 +1,87 @@
+2026-05-27 19:11:17.658 -04:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2026-05-27 19:11:18.173 -04:00 [INF] Creating game context using SQLite...
+2026-05-27 19:11:19.416 -04:00 [INF] Creating player context using SQLite...
+2026-05-27 19:11:19.760 -04:00 [INF] Creating logging context using SQLite...
+2026-05-27 19:11:20.904 -04:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2026-05-27 19:11:21.395 -04:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2026-05-27 19:11:21.401 -04:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2026-05-27 19:11:21.404 -04:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2026-05-27 19:11:21.444 -04:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2026-05-27 19:11:21.473 -04:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2026-05-27 19:11:21.475 -04:00 [INF] Discovered 0 plugins:
+
+2026-05-27 19:11:23.019 -04:00 [INF] InvalidPortCheckerResponse
+2026-05-27 19:11:23.030 -04:00 [INF] Port 5400 is not open, trying UPnP...
+2026-05-27 19:11:28.044 -04:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2026-05-27 19:11:28.055 -04:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2026-05-27 19:11:28.111 -04:00 [INF] Unpacking appsettings...
+2026-05-27 19:11:28.251 -04:00 [INF] Launching Intersect REST API in 'Production' mode...
+2026-05-27 19:11:44.314 -04:00 [INF] Connection approved [591bb0a9-1874-480f-819e-658e416788b2].
+2026-05-27 19:11:44.316 -04:00 [INF] Connected [591bb0a9-1874-480f-819e-658e416788b2].
+2026-05-27 19:30:50.333 -04:00 [INF] Disconnected [591bb0a9-1874-480f-819e-658e416788b2].
+2026-05-27 19:30:56.687 -04:00 [INF] Connection approved [0e6190b6-07a5-4973-bc24-c2252d601dfd].
+2026-05-27 19:30:56.696 -04:00 [INF] Connected [0e6190b6-07a5-4973-bc24-c2252d601dfd].
+2026-05-27 20:38:13.777 -04:00 [INF] Disconnected [0e6190b6-07a5-4973-bc24-c2252d601dfd].
+2026-05-27 20:38:20.978 -04:00 [INF] Connection approved [e6e37160-16e6-4553-966d-ebb8b8877cdc].
+2026-05-27 20:38:20.981 -04:00 [INF] Connected [e6e37160-16e6-4553-966d-ebb8b8877cdc].
+2026-05-27 20:42:53.466 -04:00 [INF] Disconnected [e6e37160-16e6-4553-966d-ebb8b8877cdc].
+2026-05-27 20:42:53.543 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 3c91297b-45f8-4468-9c05-3c897572c735)
+2026-05-27 20:42:58.982 -04:00 [INF] Connection approved [f4069b4e-1db4-4999-a817-7b51dd600e39].
+2026-05-27 20:42:58.986 -04:00 [INF] Connected [f4069b4e-1db4-4999-a817-7b51dd600e39].
+2026-05-27 20:51:35.901 -04:00 [INF] Disconnected [f4069b4e-1db4-4999-a817-7b51dd600e39].
+2026-05-27 20:51:45.919 -04:00 [INF] Connection approved [511fc62f-bbdd-4c67-baf1-d5d0c693b6e0].
+2026-05-27 20:51:45.921 -04:00 [INF] Connected [511fc62f-bbdd-4c67-baf1-d5d0c693b6e0].
+2026-05-27 20:52:33.278 -04:00 [INF] Disconnected [511fc62f-bbdd-4c67-baf1-d5d0c693b6e0].
+2026-05-27 20:52:39.184 -04:00 [INF] Connection approved [79bbc255-d27d-4f3b-b211-76c7861cc7bb].
+2026-05-27 20:52:39.186 -04:00 [INF] Connected [79bbc255-d27d-4f3b-b211-76c7861cc7bb].
+2026-05-27 20:57:30.531 -04:00 [INF] Disconnected [79bbc255-d27d-4f3b-b211-76c7861cc7bb].
+2026-05-27 20:57:30.534 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 12403b00-5366-437d-b02b-ed76ea1b3969)
+2026-05-27 20:57:35.765 -04:00 [INF] Connection approved [c150e473-645d-4eda-9993-db35655cb171].
+2026-05-27 20:57:35.767 -04:00 [INF] Connected [c150e473-645d-4eda-9993-db35655cb171].
+2026-05-27 21:29:49.524 -04:00 [INF] Disconnected [c150e473-645d-4eda-9993-db35655cb171].
+2026-05-27 21:29:56.450 -04:00 [INF] Connection approved [88d29ab5-c9c4-4f87-b040-392b515204f3].
+2026-05-27 21:29:56.452 -04:00 [INF] Connected [88d29ab5-c9c4-4f87-b040-392b515204f3].
+2026-05-27 21:30:18.764 -04:00 [INF] Disconnected [88d29ab5-c9c4-4f87-b040-392b515204f3].
+2026-05-27 21:30:18.766 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 12403b00-5366-437d-b02b-ed76ea1b3969)
+2026-05-27 21:30:22.972 -04:00 [INF] Connection approved [6382fcb4-3805-4b7f-995a-651250c72970].
+2026-05-27 21:30:22.974 -04:00 [INF] Connected [6382fcb4-3805-4b7f-995a-651250c72970].
+2026-05-27 21:30:23.015 -04:00 [ERR] Error decrypting cipherdata
+System.Security.Cryptography.AuthenticationTagMismatchException: The computed authentication tag did not match the input authentication tag.
+   at System.Security.Cryptography.AeadCommon.Decrypt(SafeKeyHandle keyHandle, ReadOnlySpan`1 nonce, ReadOnlySpan`1 associatedData, ReadOnlySpan`1 ciphertext, ReadOnlySpan`1 tag, Span`1 plaintext, Boolean clearPlaintextOnFailure)
+   at Intersect.Network.LiteNetLib.AesGcmAlgorithm.TryDecrypt(ReadOnlySpan`1 cipherdata, ReadOnlySpan`1& plaindata) in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Network\LiteNetLib\AesGcmAlgorithm.cs:line 187
+2026-05-27 21:30:23.023 -04:00 [WRN] SDER: 6382fcb4-3805-4b7f-995a-651250c72970 Error
+2026-05-27 21:30:23.025 -04:00 [WRN] FPIM: 127.0.0.1:64932 / 6382fcb4-3805-4b7f-995a-651250c72970
+2026-05-27 21:31:27.078 -04:00 [INF] Disconnected [6382fcb4-3805-4b7f-995a-651250c72970].
+2026-05-27 21:31:34.657 -04:00 [INF] Connection approved [1927d616-8c8d-4467-b027-cf896bd82789].
+2026-05-27 21:31:34.659 -04:00 [INF] Connected [1927d616-8c8d-4467-b027-cf896bd82789].
+2026-05-27 21:32:30.012 -04:00 [INF] Disconnected [1927d616-8c8d-4467-b027-cf896bd82789].
+2026-05-27 21:32:30.019 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 12403b00-5366-437d-b02b-ed76ea1b3969)
+2026-05-27 21:32:36.342 -04:00 [INF] Connection approved [34db8749-135b-44b3-9db7-d816a356667e].
+2026-05-27 21:32:36.349 -04:00 [INF] Connected [34db8749-135b-44b3-9db7-d816a356667e].
+2026-05-27 21:32:39.983 -04:00 [INF] Disconnected [34db8749-135b-44b3-9db7-d816a356667e].
+2026-05-27 21:32:50.731 -04:00 [INF] Connection approved [a29213c4-8ca2-4c54-b0bf-204103ce78e8].
+2026-05-27 21:32:50.733 -04:00 [INF] Connected [a29213c4-8ca2-4c54-b0bf-204103ce78e8].
+2026-05-27 21:33:07.283 -04:00 [INF] Disconnected [a29213c4-8ca2-4c54-b0bf-204103ce78e8].
+2026-05-27 21:33:11.467 -04:00 [INF] Connection approved [b2425210-3cdb-4375-af91-1989ffcf993d].
+2026-05-27 21:33:11.468 -04:00 [INF] Connected [b2425210-3cdb-4375-af91-1989ffcf993d].
+2026-05-27 21:35:39.978 -04:00 [INF] Disconnected [b2425210-3cdb-4375-af91-1989ffcf993d].
+2026-05-27 21:35:46.536 -04:00 [INF] Connection approved [cb35d32f-cdf3-408a-8816-2b58a30ec06d].
+2026-05-27 21:35:46.540 -04:00 [INF] Connected [cb35d32f-cdf3-408a-8816-2b58a30ec06d].
+2026-05-27 21:35:54.701 -04:00 [INF] Disconnected [cb35d32f-cdf3-408a-8816-2b58a30ec06d].
+2026-05-27 21:35:58.657 -04:00 [INF] Connection approved [4d6c1e36-0ebf-44b6-9949-500f1327bfc6].
+2026-05-27 21:35:58.660 -04:00 [INF] Connected [4d6c1e36-0ebf-44b6-9949-500f1327bfc6].
+2026-05-27 21:36:19.699 -04:00 [INF] Disconnected [4d6c1e36-0ebf-44b6-9949-500f1327bfc6].
+2026-05-27 21:36:25.611 -04:00 [INF] Connection approved [84b11630-1563-4f93-9e0e-0a3983433512].
+2026-05-27 21:36:25.616 -04:00 [INF] Connected [84b11630-1563-4f93-9e0e-0a3983433512].
+2026-05-27 21:40:19.367 -04:00 [INF] Disconnected [84b11630-1563-4f93-9e0e-0a3983433512].
+2026-05-27 21:40:19.370 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, cb11d06f-c851-4001-82c1-fd9c89f9c53c)
+2026-05-27 21:40:23.150 -04:00 [INF] Connection approved [0b08046e-60f3-4f24-9ab5-fa515085d043].
+2026-05-27 21:40:23.155 -04:00 [INF] Connected [0b08046e-60f3-4f24-9ab5-fa515085d043].
+2026-05-27 21:40:54.654 -04:00 [INF] Disconnected [0b08046e-60f3-4f24-9ab5-fa515085d043].
+2026-05-27 21:41:00.858 -04:00 [INF] Connection approved [02c89f2d-8e44-40e1-8849-4cd783476d68].
+2026-05-27 21:41:00.862 -04:00 [INF] Connected [02c89f2d-8e44-40e1-8849-4cd783476d68].
+2026-05-27 21:42:37.857 -04:00 [INF] Disconnected [02c89f2d-8e44-40e1-8849-4cd783476d68].
+2026-05-27 21:42:37.860 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, cb11d06f-c851-4001-82c1-fd9c89f9c53c)

@@ -1,0 +1,43 @@
+2025-06-06 21:36:39.347 -05:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2025-06-06 21:36:39.767 -05:00 [INF] Creating game context using SQLite...
+2025-06-06 21:36:41.942 -05:00 [INF] Creating player context using SQLite...
+2025-06-06 21:36:42.626 -05:00 [INF] Creating logging context using SQLite...
+2025-06-06 21:36:45.829 -05:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2025-06-06 21:36:47.017 -05:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2025-06-06 21:36:47.021 -05:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2025-06-06 21:36:47.026 -05:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2025-06-06 21:36:47.107 -05:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2025-06-06 21:36:47.167 -05:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2025-06-06 21:36:47.169 -05:00 [INF] Discovered 0 plugins:
+
+2025-06-06 21:36:48.904 -05:00 [INF] InvalidPortCheckerResponse
+2025-06-06 21:36:48.918 -05:00 [INF] Port 5400 is not open, trying UPnP...
+2025-06-06 21:36:53.942 -05:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2025-06-06 21:36:53.961 -05:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2025-06-06 21:36:54.044 -05:00 [INF] Unpacking appsettings...
+2025-06-06 21:36:54.349 -05:00 [INF] Launching Intersect REST API in 'Production' mode...
+2025-06-06 21:36:57.688 -05:00 [INF] Connection approved [d483a839-114e-4257-b4a9-e53d741befc5].
+2025-06-06 21:36:57.690 -05:00 [INF] Connected [d483a839-114e-4257-b4a9-e53d741befc5].
+2025-06-07 03:15:21.529 -05:00 [INF] Disconnected [d483a839-114e-4257-b4a9-e53d741befc5].
+2025-06-07 09:57:34.307 -05:00 [INF] Connection approved [6e359709-400f-4e31-a3bd-2c4a4d2b67c6].
+2025-06-07 09:57:34.316 -05:00 [INF] Connected [6e359709-400f-4e31-a3bd-2c4a4d2b67c6].
+2025-06-07 09:57:34.353 -05:00 [ERR] Error decrypting cipherdata
+System.Security.Cryptography.AuthenticationTagMismatchException: The computed authentication tag did not match the input authentication tag.
+   at System.Security.Cryptography.AeadCommon.Decrypt(SafeKeyHandle keyHandle, ReadOnlySpan`1 nonce, ReadOnlySpan`1 associatedData, ReadOnlySpan`1 ciphertext, ReadOnlySpan`1 tag, Span`1 plaintext, Boolean clearPlaintextOnFailure)
+   at Intersect.Network.LiteNetLib.AesGcmAlgorithm.TryDecrypt(ReadOnlySpan`1 cipherdata, ReadOnlySpan`1& plaindata) in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Network\LiteNetLib\AesGcmAlgorithm.cs:line 187
+2025-06-07 09:57:34.362 -05:00 [WRN] SDER: 6e359709-400f-4e31-a3bd-2c4a4d2b67c6 Error
+2025-06-07 09:57:34.363 -05:00 [WRN] FPIM: 127.0.0.1:61505 / 6e359709-400f-4e31-a3bd-2c4a4d2b67c6
+2025-06-07 15:10:16.525 -05:00 [INF] Disconnected [6e359709-400f-4e31-a3bd-2c4a4d2b67c6].
+2025-06-07 16:37:42.597 -05:00 [INF] Connection approved [bf2fd701-53e3-473d-9fed-aa058716097d].
+2025-06-07 16:37:42.634 -05:00 [INF] Connected [bf2fd701-53e3-473d-9fed-aa058716097d].
+2025-06-07 22:24:27.504 -05:00 [INF] Disconnected [bf2fd701-53e3-473d-9fed-aa058716097d].
+2025-06-08 13:54:55.890 -05:00 [INF] Connection approved [4e2e3834-41ef-42cd-810d-06975f0f75fe].
+2025-06-08 13:54:55.895 -05:00 [INF] Connected [4e2e3834-41ef-42cd-810d-06975f0f75fe].
+2025-06-08 17:05:05.573 -05:00 [INF] Connection approved [564ad54c-9437-4e7f-a9fa-3b485f0f0908].
+2025-06-08 17:05:05.613 -05:00 [INF] Connected [564ad54c-9437-4e7f-a9fa-3b485f0f0908].
+2025-06-08 17:13:10.382 -05:00 [INF] Disconnected [564ad54c-9437-4e7f-a9fa-3b485f0f0908].
+2025-06-08 17:13:10.398 -05:00 [INF] [Player.CompleteLogout] Done saving nb (hard logout, d1af5203-20bd-4bb7-8be5-954da4fa14ac)
+2025-06-08 17:13:14.386 -05:00 [INF] Disconnected [4e2e3834-41ef-42cd-810d-06975f0f75fe].

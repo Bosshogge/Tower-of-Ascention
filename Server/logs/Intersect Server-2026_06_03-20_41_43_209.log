@@ -1,0 +1,51 @@
+2026-06-03 20:41:45.318 -04:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2026-06-03 20:41:45.906 -04:00 [INF] Creating game context using SQLite...
+2026-06-03 20:41:47.680 -04:00 [INF] Creating player context using SQLite...
+2026-06-03 20:41:48.334 -04:00 [INF] Creating logging context using SQLite...
+2026-06-03 20:41:51.462 -04:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2026-06-03 20:41:52.993 -04:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2026-06-03 20:41:52.997 -04:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2026-06-03 20:41:53.003 -04:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2026-06-03 20:41:53.067 -04:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2026-06-03 20:41:53.109 -04:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2026-06-03 20:41:53.111 -04:00 [INF] Discovered 0 plugins:
+
+2026-06-03 20:41:54.974 -04:00 [INF] InvalidPortCheckerResponse
+2026-06-03 20:41:55.001 -04:00 [INF] Port 5400 is not open, trying UPnP...
+2026-06-03 20:42:00.026 -04:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2026-06-03 20:42:00.059 -04:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2026-06-03 20:42:00.155 -04:00 [INF] Unpacking appsettings...
+2026-06-03 20:42:00.370 -04:00 [INF] Launching Intersect REST API in 'Production' mode...
+2026-06-03 20:42:08.542 -04:00 [INF] Connection approved [648e0e7e-6cb2-41bf-9c39-62fdb55623e7].
+2026-06-03 20:42:08.544 -04:00 [INF] Connected [648e0e7e-6cb2-41bf-9c39-62fdb55623e7].
+2026-06-03 20:42:08.616 -04:00 [ERR] Error decrypting cipherdata
+System.Security.Cryptography.AuthenticationTagMismatchException: The computed authentication tag did not match the input authentication tag.
+   at System.Security.Cryptography.AeadCommon.Decrypt(SafeKeyHandle keyHandle, ReadOnlySpan`1 nonce, ReadOnlySpan`1 associatedData, ReadOnlySpan`1 ciphertext, ReadOnlySpan`1 tag, Span`1 plaintext, Boolean clearPlaintextOnFailure)
+   at System.Security.Cryptography.AesGcm.Decrypt(ReadOnlySpan`1 nonce, ReadOnlySpan`1 ciphertext, ReadOnlySpan`1 tag, Span`1 plaintext, ReadOnlySpan`1 associatedData)
+   at Intersect.Network.LiteNetLib.AesGcmAlgorithm.TryDecrypt(ReadOnlySpan`1 cipherdata, ReadOnlySpan`1& plaindata) in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Network\LiteNetLib\AesGcmAlgorithm.cs:line 187
+2026-06-03 20:42:08.621 -04:00 [WRN] SDER: 648e0e7e-6cb2-41bf-9c39-62fdb55623e7 Error
+2026-06-03 20:42:08.622 -04:00 [WRN] FPIM: 127.0.0.1:60038 / 648e0e7e-6cb2-41bf-9c39-62fdb55623e7
+2026-06-03 20:47:12.828 -04:00 [INF] Connection approved [31d5f110-a199-4ada-935d-70f4dd80e1e9].
+2026-06-03 20:47:12.839 -04:00 [INF] Connected [31d5f110-a199-4ada-935d-70f4dd80e1e9].
+2026-06-03 20:48:53.546 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (soft logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)
+2026-06-03 20:50:02.450 -04:00 [INF] Disconnected [31d5f110-a199-4ada-935d-70f4dd80e1e9].
+2026-06-03 20:50:02.682 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)
+2026-06-03 20:50:46.030 -04:00 [INF] Connection approved [3aae4add-f3fd-4472-b6ca-30c6b92e4fad].
+2026-06-03 20:50:46.047 -04:00 [INF] Connected [3aae4add-f3fd-4472-b6ca-30c6b92e4fad].
+2026-06-03 20:51:22.287 -04:00 [INF] Disconnected [3aae4add-f3fd-4472-b6ca-30c6b92e4fad].
+2026-06-03 20:51:22.305 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)
+2026-06-03 21:02:15.893 -04:00 [INF] Connection approved [87b6044b-6c44-4441-884d-663a8aaa2462].
+2026-06-03 21:02:16.061 -04:00 [INF] Connected [87b6044b-6c44-4441-884d-663a8aaa2462].
+2026-06-03 21:03:55.359 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (soft logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)
+2026-06-03 21:06:19.534 -04:00 [INF] Disconnected [87b6044b-6c44-4441-884d-663a8aaa2462].
+2026-06-03 21:06:19.538 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)
+2026-06-03 21:08:37.674 -04:00 [INF] Connection approved [321bbfff-8592-4e1f-bcab-b1aed63efec2].
+2026-06-03 21:08:37.711 -04:00 [INF] Connected [321bbfff-8592-4e1f-bcab-b1aed63efec2].
+2026-06-03 21:08:51.106 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (soft logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)
+2026-06-03 21:08:57.377 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (soft logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)
+2026-06-03 21:20:24.475 -04:00 [INF] Disconnected [648e0e7e-6cb2-41bf-9c39-62fdb55623e7].
+2026-06-03 21:20:49.085 -04:00 [INF] Disconnected [321bbfff-8592-4e1f-bcab-b1aed63efec2].
+2026-06-03 21:20:49.092 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)

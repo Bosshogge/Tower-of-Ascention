@@ -1,0 +1,21 @@
+2026-05-17 17:51:01.709 -05:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2026-05-17 17:51:02.281 -05:00 [INF] Creating game context using SQLite...
+2026-05-17 17:51:04.240 -05:00 [INF] Creating player context using SQLite...
+2026-05-17 17:51:04.767 -05:00 [INF] Creating logging context using SQLite...
+2026-05-17 17:51:07.575 -05:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2026-05-17 17:51:08.379 -05:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2026-05-17 17:51:08.384 -05:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2026-05-17 17:51:08.390 -05:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2026-05-17 17:51:08.456 -05:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2026-05-17 17:51:08.505 -05:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2026-05-17 17:51:08.507 -05:00 [INF] Discovered 0 plugins:
+
+2026-05-17 17:51:12.885 -05:00 [INF] InvalidPortCheckerResponse
+2026-05-17 17:51:12.912 -05:00 [INF] Port 5400 is not open, trying UPnP...
+2026-05-17 17:51:17.929 -05:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2026-05-17 17:51:17.946 -05:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2026-05-17 17:51:18.025 -05:00 [INF] Unpacking appsettings...
+2026-05-17 17:51:18.216 -05:00 [INF] Self-signed certificate is expired and will be regenerated

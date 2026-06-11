@@ -1,0 +1,25 @@
+2026-06-04 18:19:47.760 -04:00 [INF] Starting Intersect Server v0.8.0.545-beta+cbc0cf74f8509896dccc5ead8febbfb9f398c715
+2026-06-04 18:19:48.328 -04:00 [INF] Creating game context using SQLite...
+2026-06-04 18:19:49.935 -04:00 [INF] Creating player context using SQLite...
+2026-06-04 18:19:50.353 -04:00 [INF] Creating logging context using SQLite...
+2026-06-04 18:19:51.802 -04:00 [WRN] Finished validating map events on all maps, there were 0 missing events and 0 corrected events
+2026-06-04 18:19:52.391 -04:00 [INF] Discovered service type: Intersect.Plugins.PluginService
+2026-06-04 18:19:52.396 -04:00 [INF] Discovered service type: Intersect.Server.Core.LogicService
+2026-06-04 18:19:52.400 -04:00 [INF] Discovered service type: Intersect.Server.Web.ApiService
+2026-06-04 18:19:52.465 -04:00 [INF] Discovered service type: Intersect.Server.Core.ConsoleService
+2026-06-04 18:19:52.508 -04:00 [WRN] Directory was specified as a plugin directory but does not exist: 'resources\plugins'
+2026-06-04 18:19:52.512 -04:00 [INF] Discovered 0 plugins:
+
+2026-06-04 18:19:54.294 -04:00 [INF] InvalidPortCheckerResponse
+2026-06-04 18:19:54.314 -04:00 [INF] Port 5400 is not open, trying UPnP...
+2026-06-04 18:19:58.734 -04:00 [INF] Connection approved [c4ce387f-b059-4b6e-b6ba-29aaef4c7991].
+2026-06-04 18:19:58.737 -04:00 [INF] Connected [c4ce387f-b059-4b6e-b6ba-29aaef4c7991].
+2026-06-04 18:19:59.338 -04:00 [ERR] UPnP Service Initialization Failed. You might not have a router, or UPnP on your router might be disabled.
+Open.Nat.NatDeviceNotFoundException: Exception of type 'Open.Nat.NatDeviceNotFoundException' was thrown.
+   at Open.Nat.NatDiscoverer.DiscoverDeviceAsync(PortMapper portMapper, CancellationTokenSource cancellationTokenSource)
+   at Intersect.Server.Networking.Helpers.UpnP.ConnectNatDevice() in D:\a\Intersect-Engine\Intersect-Engine\Intersect.Server\Networking\Helpers\UPnP.cs:line 26
+2026-06-04 18:19:59.382 -04:00 [WRN] UPnP failed. Please verify the server status manually using a client.
+2026-06-04 18:19:59.545 -04:00 [INF] Unpacking appsettings...
+2026-06-04 18:20:00.174 -04:00 [INF] Launching Intersect REST API in 'Production' mode...
+2026-06-04 18:20:36.067 -04:00 [INF] Disconnected [c4ce387f-b059-4b6e-b6ba-29aaef4c7991].
+2026-06-04 18:20:36.114 -04:00 [INF] [Player.CompleteLogout] Done saving Boss (hard logout, 8b3fc63e-6177-49a7-a9ee-49fdb7919a17)
